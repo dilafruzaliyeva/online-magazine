@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style/cart.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head_content">
+            <p>Buyurtmangizni bepul yetkazib beramiz!</p>
+ </div>
+     <nav class="navbar">
+        <p class="logo">UP-WAY</p>
+        <ul class="menu">
+            <li><a href="">Bosh sahifa</a></li>
+            <li><a href="">Kontakt</a></li>
+            <li><a href="">Biz haqimizda</a></li>
+            <li><a href="">Ro'yhatdan o'tish</a></li>
+        </ul>
+        <form  action="">
+            <input class="search" type="text" placeholder="Siz nimani izlayapsiz?">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="iconca">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <!-- user -->
+            <div class="profile-dropdown">
+                <div class="profile-dropdown-btn" onclick="toggle()">
+                  <i class="fa-regular fa-user"></i>
+                 </div>
+                 <ul class="profile-dropdown-list">
+                  <li class="profile-dropdown-list-item">
+                      <a href="#">
+                          <i class="fa-regular fa-user"></i>
+                          Mening akkauntim
+                      </a>
+                  </li>
+                  <li class="profile-dropdown-list-item">
+                      <a href="#">
+                          <i class="fa-solid fa-bag-shopping"></i>
+                          Mening buyurtmam
+                      </a>
+                  </li>
+                  <li class="profile-dropdown-list-item">
+                      <a href="#">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                         Bekor qilish
+                      </a>
+                  </li>
+                  <li class="profile-dropdown-list-item">
+                      <a href="#">
+                          <i class="fa-regular fa-star"></i>
+                          <p class="star-text">Mening sharhlarim</p>
+                      </a>
+                  </li>
+                  <li class="profile-dropdown-list-item">
+                      <a href="#">
+                          <i class="fa-solid fa-arrow-left"></i>
+                          Chiqish
+                      </a>
+                  </li>
+                 </ul>
+              </div>
+        </div>
+     </nav>
+     <hr class="hr-nav">
+    </header>
+    <main>
+        <div class="contact-page">
+            <a href="">Bosh sahifa</a>
+            <p>/</p>
+            <a href="">Savat</a>
+        </div>
+        <ul class="cart-ul">
+            <li><p>Mahsulot</p></li>
+            <li><p>Narx</p></li>
+            <li><p>Miqdori</p></li>
+            <li><p>Jami</p></li>
+        </ul>
+        <div class="product-ul">
+            <div class="product-name"><img src="img/g92-2-500x500 1 (1).png" alt="">
+            <p>H1 Gamepad</p></div>
+            <p class="product-price">650 000</p>
+            <input class="number" type="number">
+            <p>65 000</p>
+            </div>
+            <div class="cart-button">
+                <button>Do'konga qaytish</button>
+                <button>Savatni yangilash</button>
+            </div>
+            <div class="cart-content">
+                <form action="" class="cart-form">
+                    <input type="text" placeholder="Kupon kodi">
+                    <button>Kuponni qo'llash</button>
+                </form>
+                <div class="cart-total">
+                    <p class="cart-total-text">Jami savat</p>
+                    <div class="total">
+                        <p>Oraliq jami:</p>
+                        <p>650 000 so'm</p>
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <p>Yetkazib berish:</p>
+                        <p>Bepul</p>
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <p>Jami:</p>
+                        <p>650 000 so'm</p>
+                    </div>
+                    <button class="total-btn">To'lovga o'tadi</button>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="footer">
+        <div class="footer-item">
+      <p class="logo-footer">UP-WAY</p>
+      <p class="footer-p">Obuna bo'ling</p>
+      <p class="footer-p2">Birinchi buyurtmangizga 10% chegirma oling</p>
+      <form class="form" action="">
+        <input type="text" placeholder="email kiriting!">
+        <img src="img/icon-send.png" alt="">
+      </form>
+    </div>
+    <div class="footer-item">
+        <p class="footer-p">Qo'llab quvvatlash</p>
+        <p class="footer-p2" >up-way@gmail.com</p>
+        <p class="footer-p2">+998999264754</p>
+    </div>
+    <div class="footer-item">
+        <p class="footer-p">Akkount</p>
+        <ul class="footer-ul">
+            <li><a href="">Mening sahifam</a></li>
+            <li><a href="">Kirish/Ro'yhatdan o'tish</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Cart</a></li>
+            <li><a href="">Wishlist</a></li>
+        </ul>
+    </div>
+    <div class="footer-item">
+        <p class="footer-p">Quick Link</p>
+        <ul class="footer-ul">
+            <li><a href="">Mahfiylik siyosati</a></li>
+            <li><a href="">Foydalanish shartlari</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="footer-item">
+        <p class="footer-p">UP-WAY ijtimoiy tarmoqlari</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-telegram"></i>
+    </div>
+</div>
+<hr>
+<p class="company">UP-WAY 2024.</p>
+    </footer>
+    <script src="js/user.js"></script>
+</body>
+</html>

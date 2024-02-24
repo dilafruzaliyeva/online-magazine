@@ -38,7 +38,7 @@ body{
 .menu{
     max-width: 570px;
     display: flex;
-    justify-content: space-between;
+    column-gap: 48px;
     align-items: center;
     list-style: none;
 }
@@ -48,12 +48,12 @@ body{
     font-size: 15px;
     font-weight: 400;
     color: #000;
-    padding-right: 48px;
 }
 
 .menu a:hover{
-    text-decoration: underline; 
-    color: #000;
+    border-bottom: 2px solid #000;
+    opacity: 0.5;
+    transition: 0.2s;
 }
 
 .search{
@@ -65,11 +65,19 @@ body{
     padding-left: 20px;
     font-size: 12px;
     font-weight: 500;
+    outline: none;
 }
 
 .fa-magnifying-glass{
     position: relative;
     right: 35px;
+    top: 3px;
+}
+
+.hr-nav{
+    width: 100%;
+    opacity: 0.3;
+    background: #000;
 }
 
 .iconca{
@@ -80,14 +88,69 @@ body{
     font-size: 20px;
 }
 
-.fa-user{
+/* user */
+.profile-dropdown{
+    position: relative;
+    width: fit-content;
+}
+
+.profile-dropdown-btn i{
     border-radius: 50%;
     padding: 8px;
 }
 
-.fa-user:active, .fa-user:hover{
+.profile-dropdown-btn i:hover{
     background-color: #DB4444;
     color: white;
+}
+
+.profile-dropdown-list{
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    width: 230px;
+    right: 0;
+    border-radius: 4px;
+    /* background: rgba(0, 0, 0, 0.04); */
+    /* backdrop-filter: blur(75px); */
+    background-color: #000;
+    list-style: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.profile-dropdown-list.active{
+    max-height: 500px;
+}
+
+.profile-dropdown-list-item{
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.profile-dropdown-list-item:hover{
+    padding-left: 30px;
+    background-color: #DB4444;
+}
+
+.profile-dropdown-list-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
+}
+
+.profile-dropdown-list-item a i{
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+.star-text{
+    position: relative;
+    right: 4px;
 }
 
 .slider-main{
@@ -180,17 +243,19 @@ body{
     font-size: 16px;
     font-weight: 600;
     color: #DB4444;
+    text-transform: capitalize;
 }
 
 .sale-time{
     margin: 27px 0 40px;
     display: flex;
-    column-gap: 87px;
+    column-gap: 80px;
 }
 
 .title-p{
     font-size: 36px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .time{
@@ -378,6 +443,7 @@ body{
     margin: 0 auto;
     display: block;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .product-btn:hover, .best-sell:hover{
@@ -490,6 +556,7 @@ body{
     font-weight: 600;
     color: white;
     margin: 30px 0;
+    text-transform: capitalize;
 }
 
 .music-time{
@@ -610,6 +677,8 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: #F5F5F5;
+    text-decoration: none;
+    border-bottom: 1px solid white;
 }
 
 .new-arrival2-1{
@@ -747,7 +816,7 @@ footer hr{
     width: 100%;
     opacity: 0.5;
     color: #F5F5F5;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .company{
@@ -755,5 +824,5 @@ footer hr{
     opacity: 0.5;
     font-size: 16px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 12px;
 }
